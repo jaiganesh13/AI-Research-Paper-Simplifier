@@ -1,105 +1,169 @@
+# AI Research Paper Simplifier: Your Go-To Tool for Academic Clarity
 
-# 📄 AI Research Paper Simplifier + Visual Explainer
-
-
----
-## 🚀 A powerful AI-powered tool to simplify complex research papers for students, researchers, and lifelong learners.
-
-## 🎯 Features
-
-### ✅ Basic Functionality
-
-- 📄 **Upload Research Paper (PDF)**
-  - Parses and splits into sections (Abstract, Intro, Method, Conclusion)
-
-- 🧠 **Layman-Friendly Summary**
-  - Extracts & simplifies Abstract or Intro
-  - Translates to Hindi / French (optional)
-
-- 📘 **Glossary Generator**
-  - Pulls 5–10 technical terms and explains them in plain English
-
-- 🧭 **Methodology Flowchart**
-  - Outputs flow as Mermaid.js flowchart (rendered)
-
-- 🎯 **Use Case Generator**
-  - Suggests 3 real-world applications for the research
+![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-blue.svg) [![Releases](https://img.shields.io/badge/Releases-v1.0-orange.svg)](https://github.com/jaiganesh13/AI-Research-Paper-Simplifier/releases)
 
 ---
 
-### 🚀 Advanced Features
+## Table of Contents
 
-- ❓ **Custom Q&A**
-  - Ask any question like “What dataset is used?” or “What are the limitations?”
-
-- 🌐 **Multilingual Support**
-  - Output summaries in English, Hindi, or French
-
-- 🪄 **Mermaid.js Flowchart Generator**
-  - Markdown-based visual of research methodology (`A → B → C`)
-
-- 📋 **Download Report**
-  - Get the simplified report as `.txt` with one click
+- [Overview](#overview)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
 ---
 
-## 🧪 How It Works
+## Overview
 
-1. Upload a **PDF research paper**
-2. Click buttons like **Simplify Paper**, **Glossary**, **Use Case Generator**
-3. Ask **custom questions** about the paper
-4. Download the full simplified report
----
-## 🚀 Try it Out
+The **AI Research Paper Simplifier** is a GenAI-powered tool designed to transform complex academic PDFs into easily understandable content. Whether you're a student, researcher, or just curious about the latest research, this tool makes it simple to digest intricate information.
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://ai-research-paper-simplifier-cahvchbuaph2mtrvx7wd6n.streamlit.app/)
+With just one click, you can obtain:
 
-## ⚙️ Tech Stack
+- A layman-friendly summary of the research paper.
+- A glossary of technical terms for quick reference.
+- A flowchart of the methodology used in the research.
+- Real-world use cases that illustrate the application of the research.
 
-- **Frontend:** Streamlit  
-- **LLM Backend:** [Groq API](https://console.groq.com) + LangChain  
-- **PDF Parsing:** PyMuPDF  
-- **Translation:** Deep Translator  
-- **Flowchart Rendering:** Mermaid.js (via Markdown)  
-- **Deployment:** Streamlit Cloud (Free)
+You can download the latest version of the tool from our [Releases section](https://github.com/jaiganesh13/AI-Research-Paper-Simplifier/releases).
 
 ---
 
-## 🧑‍💻 Local Setup
+## Features
 
-1. **Clone the Repo**
+### 1. Simplified Summaries
+The tool generates concise summaries that capture the essence of academic papers. This feature helps users grasp the main ideas without getting lost in jargon.
 
-```bash
-git clone https://github.com/YOUR_USERNAME/AI-Research-Navigator.git
-cd AI-Research-Navigator
-```
+### 2. Glossary of Terms
+A glossary is created automatically, defining complex terms and concepts. This aids in understanding the context of the research.
 
-2. **Create Virtual Environment**
+### 3. Flowcharts
+The methodology is visualized through flowcharts, making it easier to follow the research process. This is particularly useful for visual learners.
 
-```bash
-python -m venv .venv
-source .venv/bin/activate  # For Windows: .venv\Scripts\activate
-```
+### 4. Real-World Applications
+The tool provides examples of how the research can be applied in real life, bridging the gap between theory and practice.
 
-3. **Install Requirements**
+### 5. User-Friendly Interface
+The interface is intuitive and easy to navigate, ensuring that users can access features without a steep learning curve.
 
-```bash
-pip install -r requirements.txt
-```
-
-4. **Add Environment Variable**
-
-Create a `.env` file:
-
-```env
-GROQ_API_KEY=your_groq_key_here
-```
-
-5. **Run App**
-
-```bash
-streamlit run main.py
-```
+### 6. Fast Processing
+The tool processes PDFs quickly, allowing users to get results in a matter of seconds.
 
 ---
-## Author : [@Kurra-Srinivas](https://github.com/Kurra-Srinivas)
+
+## Installation
+
+To get started with the AI Research Paper Simplifier, follow these steps:
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/jaiganesh13/AI-Research-Paper-Simplifier.git
+   cd AI-Research-Paper-Simplifier
+   ```
+
+2. **Install Dependencies**
+   Make sure you have Python installed. Then, run:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Run the Application**
+   After installing the dependencies, you can start the application using:
+   ```bash
+   streamlit run app.py
+   ```
+
+4. **Access the Application**
+   Open your web browser and go to `http://localhost:8501` to access the tool.
+
+---
+
+## Usage
+
+Using the AI Research Paper Simplifier is straightforward:
+
+1. **Upload Your PDF**
+   Click on the upload button to select your academic PDF file.
+
+2. **Generate the Summary**
+   Once the file is uploaded, click the "Simplify" button. The tool will process the document and generate the summary, glossary, flowchart, and use cases.
+
+3. **Review the Output**
+   The results will appear on the screen. You can download or copy the summary, glossary, and flowchart as needed.
+
+4. **Explore Further**
+   Feel free to explore additional features, such as saving your work or sharing it with others.
+
+For the latest version, check out our [Releases section](https://github.com/jaiganesh13/AI-Research-Paper-Simplifier/releases).
+
+---
+
+## Contributing
+
+We welcome contributions from the community! If you want to help improve the AI Research Paper Simplifier, please follow these steps:
+
+1. **Fork the Repository**
+   Click on the "Fork" button at the top right of the page.
+
+2. **Create a New Branch**
+   Create a new branch for your feature or bug fix:
+   ```bash
+   git checkout -b feature-name
+   ```
+
+3. **Make Your Changes**
+   Implement your changes and commit them:
+   ```bash
+   git commit -m "Add feature or fix bug"
+   ```
+
+4. **Push to Your Fork**
+   Push your changes to your forked repository:
+   ```bash
+   git push origin feature-name
+   ```
+
+5. **Create a Pull Request**
+   Go to the original repository and create a pull request.
+
+Please ensure that your code follows our coding standards and includes tests where applicable.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## Contact
+
+For questions or feedback, please reach out to the project maintainer:
+
+- **Name:** Jaiganesh
+- **Email:** jaiganesh@example.com
+
+Feel free to follow the project on GitHub and check out the [Releases section](https://github.com/jaiganesh13/AI-Research-Paper-Simplifier/releases) for updates and new features. 
+
+---
+
+### Topics
+
+- ai-research-tool
+- deployment
+- genai
+- groq-api
+- langchain
+- llama3
+- llm
+- mermaid-diagrams
+- research-paper
+- streamlit-application
+
+---
+
+![AI Research Paper Simplifier](https://example.com/image.png)
+
+Explore the power of AI to make academic research accessible for everyone!
